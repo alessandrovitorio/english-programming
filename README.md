@@ -132,8 +132,9 @@ sendWelcomeEmail(userEmail);
 * Sempre pergunte: *"Se outra pessoa ler meu código, ela entenderá o que isso significa?"*
 * Bons nomes ajudam a evitar comentários desnecessários no código.
 * Pense no código como um **texto em inglês**, não como uma sequência de siglas e abreviações.
-
+  
 ---
+acessar o site: [🌎Boas Práticas de Nomes](https://alessandrovitorio.github.io/english-programming/)
 
 ## 📄 Licença
 
