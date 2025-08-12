@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aprenda Inglês e Programação</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="brand"><img src="./img/logo.png" alt="" /></div>
+        <nav class="menu" aria-label="Main navigation">
+          <a href="#about" class="nav-link">Sobre 📝</a>
+          <a href="#aprenda" class="nav-link">Aprenda 📚</a>
+          <a href="#html-cheats" class="nav-link">HTML 📄</a>
+          <a href="#css-cheats" class="nav-link">CSS 🎨</a>
+          <a href="#naming" class="nav-link">Variáveis 🧠</a>
+          <a href="#terminal" class="nav-link">Terminal 🖥️</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Portal de Estudos — Inglês & Programação</h1>
+          <p>
+            Material criado por Alessandro para Profª Juliana utilizar como
+            ferramenta do ensino de inglês instrumental, aplicando tecnologia e
+            programação para alunos do ensino médio técnico da Etec Irmã
+            Augostina.
+          </p>
+          <a class="cta" href="#aprenda">Começar a estudar</a>
+        </div>
+      </section>
+
+      <section id="about" class="wrap">
+        <div class="card about-grid">
+          <div>
+            <h2>Sobre a Parceria</h2>
+            <p>
+              Unimos a didática comunicativa da professora Juliana com conteúdo
+              técnico prático (HTML, CSS, JavaScript e comandos de terminal) —
+              ideal para alunos que querem aprender inglês e programação ao
+              mesmo tempo.
+            </p>
+            <p>
+              Escolher bons nomes para variáveis, funções e classes é uma das
+              práticas mais valiosas em programação. Muitas vezes, <strong>o código é
+              lido muito mais vezes do que é escrito,</strong> e nomes claros tornam essa
+              leitura muito mais fácil e rápida.
+            </p>
+            <h2>💡 Por que nomes em Inglês?</h2>
+  <ul>
+    <li><strong>Padrão da indústria</strong> – A maior parte da documentação, bibliotecas e APIs é escrita em inglês. Isso cria um vocabulário comum entre desenvolvedores do mundo todo.</li>
+    <li><strong>Facilidade de colaboração</strong> – Trabalhar em projetos internacionais ou mesmo com desenvolvedores de diferentes regiões do Brasil é muito mais simples quando os nomes estão em inglês.</li>
+    <li><strong>Aprendizado natural de inglês técnico</strong> – Ao criar variáveis como <code>userName</code> ou <code>totalPrice</code>, você reforça o vocabulário técnico e se acostuma com termos usados globalmente.</li>
+    <li><strong>Compatibilidade e consistência</strong> – Muitos frameworks e ferramentas esperam padrões que já estão no inglês, evitando misturas estranhas de idiomas no código.</li>
+  </ul>
+
+  <h2>📚 Importância de bons nomes</h2>
+  <ul>
+    <li><strong>Clareza</strong> – Bons nomes descrevem a função ou o propósito de um elemento no código, reduzindo a necessidade de comentários extras.</li>
+    <li><strong>Manutenção</strong> – Um código com nomes claros é mais fácil de manter e atualizar, mesmo depois de meses ou anos.</li>
+    <li><strong>Onboarding rápido</strong> – Novos desenvolvedores entendem o projeto mais rápido quando a nomenclatura é autoexplicativa.</li>
+  </ul>
+
+  <blockquote style="background: #f9f9f9; border-left: 5px solid #ccc; padding: 10px; font-style: italic;">
+    📖 Robert C. Martin, no livro <em>Clean Code</em>, afirma:<br>
+    “Escolher bons nomes leva tempo, mas economiza muito mais tempo do que custa.”
+  </blockquote>
+
+  <p>Isso reforça que investir alguns segundos a mais para pensar em um bom nome é um ato de responsabilidade profissional.</p>
+            </p>
+            <p>
+              🚀 Conclusão Usar bons nomes (em inglês) é mais do que uma questão
+              estética — é comunicação. Seu código é uma conversa contínua entre
+              você, outros desenvolvedores e até mesmo seu “eu” do futuro.
+              Lembre-se: código é lido muito mais do que é escrito.
+            </p>
+
+            <div class="benefits">
+              <div class="benefit">
+                <h4>Foco em conversação</h4>
+                <p>Atividades orais e role-plays em inglês técnico.</p>
+              </div>
+              <div class="benefit">
+                <h4>Exemplos reais</h4>
+                <p>Exemplos práticos de uso da linguagem em contextos reais.</p>
+              </div>
+              <div class="benefit">
+                <h4>Feedback</h4>
+                <p>Correções personalizadas e materiais para estudo.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="avatar"
+              src="./img/avatar-removebg-preview.png"
+              alt="Professora Juliana — foto"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- APRNDA -->
+      <section id="aprenda" class="wrap">
+        <div class="card">
+          <h2>Aprenda — Conteúdo detalhado e interativo 📚</h2>
+          <p>
+            Use as seções específicas de HTML e CSS abaixo para estudar termos,
+            abreviações e ver exemplos práticos. Cada seção contém a tradução e
+            o motivo do nome das tags/propriedades.
+          </p>
+
+          <div class="tabs">
+            <a class="tab" href="#html-cheats">HTML 📄</a>
+            <a class="tab" href="#css-cheats">CSS 🎨</a>
+            <a class="tab" href="#js-cheats">JS ⚡</a>
+          </div>
+
+          <p class="muted">
+            Dica: clique nos títulos das linhas nas tabelas para ver exemplos
+            práticos e copiar o código.
+          </p>
+        </div>
+      </section>
+
+      <!-- HTML Cheatsheet -->
+      <section id="html-cheats" class="wrap">
+        <div class="card">
+          <h2>HTML Cheatsheet — Tags, abreviações e por quê 📄</h2>
+          <p>
+            Esta tabela explica cada tag, o nome por extenso (quando aplicável),
+            a razão do nome e um exemplo. Use para revisar e explicar em sala de
+            aula.
+          </p>
+          <table style="margin-top: 12px">
+            <thead>
+              <tr>
+                <th>Tag</th>
+                <th>Significado/Abreviação</th>
+                <th>Por que esse nome?</th>
+                <th>Exemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;h1&gt; - &lt;h6&gt;</td>
+                <td>Heading</td>
+                <td>
+                  H = Heading (título). Número indica nível de importância
+                  semântica.
+                </td>
+                <td><small>&lt;h1&gt;Título&lt;/h1&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;p&gt;</td>
+                <td>Paragraph</td>
+                <td>P = Paragraph, bloco de texto.</td>
+                <td><small>&lt;p&gt;Parágrafo de exemplo.&lt;/p&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;a&gt;</td>
+                <td>Anchor</td>
+                <td>
+                  A = Anchor (âncora/ligação). Pequeno e direto por tradição.
+                </td>
+                <td><small>&lt;a href="page.html"&gt;Link&lt;/a&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;img&gt;</td>
+                <td>Image</td>
+                <td>IMG = imagem; curto para digitação rápida e histórico.</td>
+                <td>
+                  <small>&lt;img src="foto.jpg" alt="descrição"/&gt;</small>
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;ul&gt; / &lt;ol&gt;</td>
+                <td>Unordered / Ordered List</td>
+                <td>
+                  UL = Unordered List (lista sem ordem); OL = Ordered List
+                  (lista numerada).
+                </td>
+                <td>
+                  <small>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</small>
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;li&gt;</td>
+                <td>List Item</td>
+                <td>LI = List Item, item de lista.</td>
+                <td><small>&lt;li&gt;Item&lt;/li&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;table&gt;</td>
+                <td>Table</td>
+                <td>Cria tabelas; nome óbvio em inglês.</td>
+                <td><small>&lt;table&gt;...&lt;/table&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>Table Row</td>
+                <td>TR = Table Row (linha da tabela).</td>
+                <td>
+                  <small
+                    >&lt;tr&gt;&lt;td&gt;Celula&lt;/td&gt;&lt;/tr&gt;</small
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;td&gt;</td>
+                <td>Table Data</td>
+                <td>TD = Table Data, célula comum com dados.</td>
+                <td><small>&lt;td&gt;Valor&lt;/td&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;th&gt;</td>
+                <td>Table Header</td>
+                <td>
+                  TH = Table Header, célula de cabeçalho (normalmente em negrito
+                  e centralizada).
+                </td>
+                <td><small>&lt;th&gt;Nome&lt;/th&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;thead&gt; / &lt;tbody&gt; / &lt;tfoot&gt;</td>
+                <td>Table sections</td>
+                <td>
+                  Dividem a tabela em partes semânticas (cabeçalho, corpo,
+                  rodapé).
+                </td>
+                <td><small>&lt;thead&gt;&lt;/thead&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;form&gt; &lt;input&gt;</td>
+                <td>Form &amp; Input</td>
+                <td>Para enviar dados; nomes simples por legibilidade.</td>
+                <td><small>&lt;form&gt;&lt;input /&gt;&lt;/form&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;button&gt;</td>
+                <td>Button</td>
+                <td>Elemento interativo para ações do usuário.</td>
+                <td><small>&lt;button&gt;Enviar&lt;/button&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;div&gt; &lt;span&gt;</td>
+                <td>Division / Span</td>
+                <td>
+                  DIV = bloco genérico; SPAN = inline genérico — nomes curtos
+                  por utilidade frequente.
+                </td>
+                <td><small>&lt;div class="card"&gt;&lt;/div&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;nav&gt; &lt;header&gt; &lt;footer&gt;</td>
+                <td>Semânticos</td>
+                <td>
+                  Elementos estruturais: nav = navegação; header/footer =
+                  topo/rodapé.
+                </td>
+                <td><small>&lt;nav&gt;Menu&lt;/nav&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;section&gt; &lt;article&gt;</td>
+                <td>Section / Article</td>
+                <td>Usados para estruturar conteúdo em blocos lógicos.</td>
+                <td><small>&lt;section&gt;Sobre&lt;/section&gt;</small></td>
+              </tr>
+              <tr>
+                <td>&lt;code&gt; &lt;pre&gt;</td>
+                <td>Code / Pre</td>
+                <td>Presentação de código; pre mantém quebra de linhas.</td>
+                <td>
+                  <small
+                    >&lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;</small
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>&lt;br&gt; &lt;hr&gt;</td>
+                <td>Break / Horizontal rule</td>
+                <td>
+                  Quebra de linha e linha divisória — nomes curtos por ação
+                  simples.
+                </td>
+                <td><small>Ex: Texto&lt;br&gt;Outra linha</small></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top: 12px">Por que as tags tem nomes curtos? 🤔</h3>
+          <p>
+            História rápida: as primeiras linguagens e editores priorizavam
+            typing rápido — nomes curtos eram mais práticos. Além disso, muitas
+            tags representam conceitos óbvios (p = paragraph, img = image) e os
+            nomes ficaram como padrão. Hoje a convenção permanece porque são
+            fáceis de lembrar e digitar.
+          </p>
+        </div>
+      </section>
+
+      <!-- CSS Cheatsheet -->
+      <section id="css-cheats" class="wrap">
+        <div class="card">
+          <h2>CSS Cheatsheet — Propriedades, tradução e exemplos 🎨</h2>
+          <p>
+            Abaixo você encontra as propriedades mais usadas, o que significam e
+            exemplos rápidos para mostrar como aplicar.
+          </p>
+
+          <table style="margin-top: 12px">
+            <thead>
+              <tr>
+                <th>Propriedade</th>
+                <th>O que faz</th>
+                <th>Exemplo (uso)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>color</strong></td>
+                <td>Cor do texto</td>
+                <td><small>p { color: #333; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>background / background-color</strong></td>
+                <td>Fundo do elemento</td>
+                <td><small>div { background-color: #f0f0f0; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>font-family</strong></td>
+                <td>Fonte usada</td>
+                <td><small>body { font-family: Inter, sans-serif; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>font-size</strong></td>
+                <td>Tamanho da fonte</td>
+                <td><small>h1 { font-size: 32px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>font-weight</strong></td>
+                <td>Peso da fonte (bold,etc)</td>
+                <td><small>strong { font-weight: 700; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>margin</strong></td>
+                <td>Espaço externo</td>
+                <td><small>.box { margin: 20px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>padding</strong></td>
+                <td>Espaço interno</td>
+                <td><small>.box { padding: 16px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>border</strong></td>
+                <td>Borda ao redor do elemento</td>
+                <td><small>div { border: 1px solid #ddd; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>border-radius</strong></td>
+                <td>Arredondamento das bordas</td>
+                <td><small>.btn{ border-radius: 8px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>width / height</strong></td>
+                <td>Tamanho do elemento</td>
+                <td><small>img{ width:100%; height:auto; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>display</strong></td>
+                <td>Como o elemento se comporta (block, inline, flex)</td>
+                <td><small>.row{ display:flex; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>position</strong></td>
+                <td>posição (static, relative, absolute, fixed)</td>
+                <td><small>.badge{ position:absolute; top:10px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>z-index</strong></td>
+                <td>Ordem de empilhamento</td>
+                <td><small>.modal{ z-index:1000; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>flex / align-items / justify-content</strong></td>
+                <td>Alinhamento com Flexbox</td>
+                <td>
+                  <small
+                    >.container{ display:flex; align-items:center;
+                    justify-content:center; }</small
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>grid / gap</strong></td>
+                <td>Layouts com Grid</td>
+                <td><small>.grid{ display:grid; gap:16px; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>text-align</strong></td>
+                <td>Alinhamento do texto</td>
+                <td><small>h1{ text-align:center; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>line-height</strong></td>
+                <td>Altura da linha</td>
+                <td><small>p{ line-height:1.6; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>box-shadow</strong></td>
+                <td>Sombra da caixa</td>
+                <td>
+                  <small
+                    >.card{ box-shadow: 0 8px 30px rgba(0,0,0,0.06); }</small
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td><strong>transition</strong></td>
+                <td>Transições suaves</td>
+                <td><small>a{ transition: color 0.2s; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>transform</strong></td>
+                <td>Transformações (rotate, scale)</td>
+                <td><small>.icon{ transform: rotate(10deg); }</small></td>
+              </tr>
+              <tr>
+                <td><strong>opacity</strong></td>
+                <td>Transparência</td>
+                <td><small>.muted{ opacity:0.6; }</small></td>
+              </tr>
+              <tr>
+                <td><strong>cursor</strong></td>
+                <td>Tipo de cursor ao passar o mouse</td>
+                <td><small>button{ cursor:pointer; }</small></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top: 12px">Boas práticas CSS</h3>
+          <ul>
+            <li>
+              Use variáveis CSS (custom properties) para cores e espaçamentos.
+            </li>
+            <li>
+              Prefira classes semânticas (.btn, .card) em vez de seletor por
+              tag.
+            </li>
+            <li>Separe componentes (reutilizáveis) em blocos pequenos.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- JS Cheatsheet / Exercises -->
+      <section id="js-cheats" class="wrap">
+        <div class="card">
+          <h2>JavaScript — Conceitos ⚡</h2>
+          <p>Resumos rápidos os alunos podem testar no console do navegador.</p>
+
+          <h3>Conceitos importantes</h3>
+          <ul>
+            <li>
+              <strong>Variable</strong> — Armazena valores (ex:
+              <code>let count = 0;</code>).
+            </li>
+            <li>
+              <strong>Function</strong> — Bloco de código reutilizável (<code
+                >function sum(a,b){ return a+b; }</code
+              >).
+            </li>
+            <li>
+              <strong>Array / Object</strong> — Coleções ordenadas / associações
+              chave-valor.
+            </li>
+            <li><strong>Event</strong> — Ações do usuário (click, submit).</li>
+          </ul>
+
+          <h3 style="margin-top: 12px">Exemplo prático: manipular DOM</h3>
+          <div class="code-header">
+            <small>JS DOM</small
+            ><button class="btn secondary" data-copy="#code-js3">Copiar</button>
+          </div>
+          <pre
+            id="code-js3"
+          ><code class="language-javascript">document.getElementById('demo').innerText = 'Olá, turma!';
+// Teste no console depois de colar no console do navegador</code></pre>
+        </div>
+      </section>
+
+      <!-- Exercises (separate) -->
+
+      <!-- Naming -->
+      <section id="naming" class="wrap">
+        <div class="card">
+          <h2>Nomes de Variáveis — Regras & Exemplos 🧠</h2>
+          <p>
+            Detalhamento ampliado com muitos exemplos práticos. Explique para os
+            alunos por que um nome é melhor que outro.
+          </p>
+
+          <h3>Conceitos e estilo</h3>
+          <ul>
+            <li>
+              <strong>camelCase</strong> — usado em JavaScript:
+              <code>userEmail</code>.
+            </li>
+            <li>
+              <strong>snake_case</strong> — comum em Python:
+              <code>user_email</code>.
+            </li>
+            <li>
+              <strong>PascalCase</strong> — usado para classes:
+              <code>CustomerOrder</code>.
+            </li>
+          </ul>
+
+          <h3 style="margin-top: 12px">
+            Mais exemplos (ruins → melhores) com explicação detalhada
+          </h3>
+          <table style="margin-top: 12px">
+            <thead>
+              <tr>
+                <th>Ruim</th>
+                <th>Melhor</th>
+                <th>Por quê (detalhado)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bad">
+                <td>data</td>
+                <td class="good">userData</td>
+                <td>
+                  "data" é vago: pode ser anything. "userData" indica claramente
+                  que os dados pertencem a um usuário e ajuda quem lê o código.
+                </td>
+              </tr>
+              <tr class="bad">
+                <td>n</td>
+                <td class="good">attemptCount</td>
+                <td>
+                  Uma variável chamada "n" não informa se é um contador, índice
+                  ou outro valor. "attemptCount" indica propósito e unidade
+                  (contagem).
+                </td>
+              </tr>
+              <tr class="bad">
+                <td>tmp</td>
+                <td class="good">temporaryFilePath</td>
+                <td>
+                  Evita ambiguidades: "tmp" pode significar muitas coisas; nome
+                  longo comunica tipo e intenção (path temporário).
+                </td>
+              </tr>
+              <tr class="bad">
+                <td>arr</td>
+                <td class="good">itemsList</td>
+                <td>
+                  Especifica que é uma coleção (lista) e o tipo de elementos
+                  (items).
+                </td>
+              </tr>
+              <tr class="bad">
+                <td>flag</td>
+                <td class="good">isUserActive</td>
+                <td>
+                  Booleanos devem começar com is/has/should para deixar claro
+                  que esperam true/false.
+                </td>
+              </tr>
+              <tr class="bad">
+                <td>get</td>
+                <td class="good">getUserEmail</td>
+                <td>
+                  Funções devem começar com verbo: getUserEmail indica ação e
+                  retorno esperado.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top: 12px">
+            Exemplos práticos de refatoração (antes → depois)
+          </h3>
+          <pre><code>// ANTES
+let a = 1;
+let b = 'John';
+function f(d){ return d*2; }
+
+// DEPOIS
+let retryCount = 1; // contador de tentativas
+let userName = 'John';
+function double(value){ return value * 2; }</code></pre>
+        </div>
+
+        <h2>💡 Naming Variables and Functions in English</h2>
+        <p>Always use clear and descriptive names. Here are some examples:</p>
+
+        <pre>
+// Variable Examples
+let userName = "John Doe";
+let totalPrice = 149.99;
+let isStudent = true;
+let birthYear = 2005;
+let favoriteColor = "blue";
+
+// Function Examples
+function calculateAge(birthYear) {
+    let currentYear = new Date().getFullYear();
+    return currentYear - birthYear;
+}
+
+function formatPrice(price) {
+    return "$" + price.toFixed(2);
+}
+
+function greetUser(name) {
+    return "Hello, " + name + "!";
+}
+
+// Using the functions
+console.log(greetUser(userName));       // "Hello, John Doe!"
+console.log(calculateAge(birthYear));   // e.g., 20
+console.log(formatPrice(totalPrice));   // "$149.99"
+  </pre
+        >
+
+        <p>
+          ✔ Use verbs for function names (e.g., <code>calculateAge</code>,
+          <code>formatPrice</code>).
+        </p>
+        <p>
+          ✔ Use nouns or adjectives for variables (e.g., <code>userName</code>,
+          <code>totalPrice</code>).
+        </p>
+      </section>
+
+      <!-- Terminal -->
+      <section id="terminal" class="wrap">
+        <div class="card">
+          <h2>Terminal — Comandos essenciais & tradução 🖥️</h2>
+          <p>
+            Referência rápida com nome em inglês, tradução e exemplo de uso.
+          </p>
+          <table style="margin-top: 12px">
+            <thead>
+              <tr>
+                <th>Comando</th>
+                <th>Nome (inglês)</th>
+                <th>Tradução / Uso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ls</td>
+                <td>list</td>
+                <td>
+                  Listar arquivos e diretórios (<code>ls -la</code> mostra
+                  detalhes).
+                </td>
+              </tr>
+              <tr>
+                <td>cd</td>
+                <td>change directory</td>
+                <td>Mudar de diretório (<code>cd /home/user</code>).</td>
+              </tr>
+              <tr>
+                <td>pwd</td>
+                <td>print working directory</td>
+                <td>Mostrar caminho atual (<code>pwd</code>).</td>
+              </tr>
+              <tr>
+                <td>cp</td>
+                <td>copy</td>
+                <td>Copiar arquivos (<code>cp src dest</code>).</td>
+              </tr>
+              <tr>
+                <td>mv</td>
+                <td>move</td>
+                <td>Mover/renomear (<code>mv old new</code>).</td>
+              </tr>
+              <tr>
+                <td>rm</td>
+                <td>remove</td>
+                <td>Apagar (<code>rm file</code> — cuidado!).</td>
+              </tr>
+              <tr>
+                <td>mkdir</td>
+                <td>make directory</td>
+                <td>Criar diretório (<code>mkdir new_folder</code>).</td>
+              </tr>
+              <tr>
+                <td>touch</td>
+                <td>touch</td>
+                <td>
+                  Criar arquivo vazio ou atualizar timestamp (<code
+                    >touch file.txt</code
+                  >).
+                </td>
+              </tr>
+              <tr>
+                <td>cat</td>
+                <td>concatenate</td>
+                <td>Mostrar conteúdo (<code>cat file.txt</code>).</td>
+              </tr>
+              <tr>
+                <td>grep</td>
+                <td>global regular expression print</td>
+                <td>Buscar texto (<code>grep 'term' file</code>).</td>
+              </tr>
+              <tr>
+                <td>chmod</td>
+                <td>change mode</td>
+                <td>Mudar permissões (<code>chmod 644 file</code>).</td>
+              </tr>
+              <tr>
+                <td>chown</td>
+                <td>change owner</td>
+                <td>Mudar dono (<code>chown user:group file</code>).</td>
+              </tr>
+              <tr>
+                <td>ps</td>
+                <td>process status</td>
+                <td>Listar processos (<code>ps aux</code>).</td>
+              </tr>
+              <tr>
+                <td>kill</td>
+                <td>kill</td>
+                <td>Finalizar processo (<code>kill PID</code>).</td>
+              </tr>
+              <tr>
+                <td>top</td>
+                <td>table of processes</td>
+                <td>Monitorar processos em tempo real (<code>top</code>).</td>
+              </tr>
+              <tr>
+                <td>man</td>
+                <td>manual</td>
+                <td>Manual do comando (<code>man ls</code>).</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top: 12px">Exemplo rápido de terminal</h3>
+          <p>
+            Peça para os alunos criarem uma pasta, entrarem nela, criarem um
+            arquivo e verem seu conteúdo:
+          </p>
+          <pre>
+            <code>
+                mkdir aula1
+                cd aula1
+                touch nota.txt
+                echo "Minhas notas" &gt; nota.txt
+                cat nota.txt
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <!-- Contato -->
+    </main>
+
+    <button id="backTop" title="Voltar ao topo">↑</button>
+
+    <footer>
+      &copy; 2025 Parceria Profª Juliana — Portal de Estudos • Desenvolvido por
+      Alessandro
+    </footer>
+  </body>
+</html>
